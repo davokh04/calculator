@@ -1,11 +1,16 @@
+body {
+    background-color: aliceblue;
+    font-size: 40px;
+}
+
 .container {
     display: flex;
     flex-direction: column;
     border: 10px solid rgb(14, 130, 197);
-    border-radius: 20px;
+    border-radius: 50px;
     width: 420px;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 70px;
     align-items: center;
     padding: 50px;
     box-sizing: border-box;
@@ -17,6 +22,9 @@
     border-radius: 20px;
     height: 70px;
     width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
 }
 
 .buttons {
@@ -26,12 +34,23 @@
     gap: 12px;
 }
 
-.number, .operator {
-    font-size: 40px;
-    border: 3px solid rgb(160, 154, 154);
+.number, .operator, .equal, .ce {
+    border: 3px solid rgb(206, 197, 197);
     border-radius: 20px;
     height: 50px;
     width: 50px;
     text-align: center;
     padding: 5px;
+    transition: background-color 0.2s;
+}
+
+.number:hover, .operator:hover, .equal:hover, .ce:hover {
+    background-color: rgb(236, 233, 209);
+}
+
+body {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select:none;
+    user-select:none;
 }
